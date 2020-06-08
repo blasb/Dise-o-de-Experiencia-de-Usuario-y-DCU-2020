@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja de Ahorro</title>
+    <link href="mi_estilos.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+  <header id="header">
+          <button id="menu-button" type="button" onclick="toggleMainMenu()" onkeypress="toggleMainMenu()" role="button">Menú</button>
+      <div id="logo-banco-nacion">
+          <img id="logo-banco" src="./imgs/bank.png" alt="Logo de Banco">
+          <h2 id="banco-nacion">Banco Nación</h2>
+      </div>
+      <div id="search-and-user">
+          <div id="searcher">
+              <input id="input-search" type="text" name="fname">
+              <button id="button-search" type="submit">
+                  <img id="mag-img" src="./imgs/mag.png" alt="Lupa del buscador">
+              </button>
+          </div>
+          <button onclick="toggleUserMenu()" id="user" onkeypress="toggleUserMenu()" role="button">
+              <span id="user-name">Perez, Pablo</span>
+              <img id="logo-user" src="./imgs/user-logo.png" alt="Logo de una persona">
+          </button>
+      </div>
+  </header>
+  <nav id="main-menu">
+      <h1 class="menu-title">Frecuentes</h1>
+      <a href="#1" class="menu-item">
+          Saldos
+      </a>
+      <a href="#2" class="menu-item">
+          Consulta Alias/CBU
+      </a>
+      <a href="transfer1.html" class="menu-item">
+          Transferencias Simples
+      </a>
+      <a href="#3" class="menu-item">
+          Pagar
+      </a>
+      <a href="#4" class="menu-item">
+          Compra / Venta de dolares
+      </a>
+      <h1 class="menu-title">Otras operaciones</h1>
+      <a href="#5" class="menu-item">
+          Solicitar Soft Token
+      </a>
+      <a href="#6" class="menu-item">
+          Posición Consolidada
+      </a>
+      <a href="#7" class="menu-item">
+          Saldos
+      </a>
+      <a href="#8" class="menu-item">
+          Movimientos
+      </a>
+      <a href="#9" class="menu-item">
+          Consultar Tarjetas de Credito
+      </a>
+      <a href="#10" class="menu-item">
+          Solicitar Tarjeta Adicional
+      </a>
+      <a href="#11" class="menu-item">
+          Telefonia Celular
+      </a>
+      <a href="#12" class="menu-item">
+          Tarjetas Recargables
+      </a>
+      <a href="#13" class="menu-item">
+          Compras en Comercios
+      </a>
+      <a href="#14" class="menu-item">
+          Transportes
+      </a>
+      <a href="#15" class="menu-item">
+          Recarga Servicio Prepago
+      </a>
+      <a href="#16" class="menu-item">
+          Transferencias a destinatarios agendados
+      </a>
+      <a href="#17" class="menu-item">
+          AFIP
+      </a>
+      <a href="#18" class="menu-item">
+          Pagos Realizados
+      </a>
+      <a href="#19" class="menu-item">
+          Servicios Adheridos
+      </a>
+      <a href="#20" class="menu-item">
+          Plazos Fijos
+      </a>
+      <a href="#21" class="menu-item">
+          Fondos Comunes de Inversion
+      </a>
+      <a href="#22" class="menu-item">
+          Documentos Digitales
+      </a>
+      <a href="#23" class="menu-item">
+          Chequeras/Boletas
+      </a>
+      <a href="#24" class="menu-item">
+          Prestamos
+      </a>
+      <a href="#25" class="menu-item">
+          Beneficios Nacion
+      </a>
+      <a href="#26" class="menu-item">
+          Servicio AFIP
+      </a>
+      <a href="#27" class="menu-item">
+          Devolucion de IVA
+      </a>
+      <a href="#28" class="menu-item">
+          Todo Pago
+      </a>
+      <a href="#29" class="menu-item">
+          Beneficios Especiales
+      </a>
+      <a href="#30" class="menu-item">
+          Comparacion de Comisiones
+      </a>
+  </nav>
+  <nav id="user-menu">
+      <h1 id="user-title">Operaciones Personales</h1>
+      <a href="#31" class="user-item">
+          Servicio de Mensajes y Alertas
+      </a>
+      <a href="#32" class="user-item">
+          Aviso de Viaje al Exterior
+      </a>
+      <a href="#33" class="user-item">
+          Aplicativo Link Celular
+      </a>
+      <a href="#34" class="user-item">
+          Datos Personales
+      </a>
+      <a href="#35" class="user-item">
+          Blanqueo de PIL
+      </a>
+      <a href="#36" class="user-item">
+          Blanqueo de PIN
+      </a>
+      <a href="#37" class="user-item">
+          Blanqueo de Tarjeta de Débito
+      </a>
+      <a href="#38" class="user-item">
+          Cerrar Sesión
+      </a>
+  </nav>
+  <article id="main-content">
+      <div title="Informacion sobre la cuenta" id="encabezado_de_cuentas">
+        <h1> Caja de Ahorro </h1>
+        <h3> Nro de cuenta: 23432439428330 </h3>
+        <h5>CBU: 0110030330003021235808</h5>
+        <h5>Alias: Diseño.EXP.US</h5>
+      </div>
+      <div id="main_container_cuenta">
+      <table class="table table-bordered" title="Ultimos movimientos de la cuenta" summary="Tabla con informacion de los ultimos movimientos, a la izquierda se encuentran las fehcas, al medio el concepto y a la derecha el monto de la operacion">
+        <thead>
+          <tr>
+            <th colspan="3" scope="col" id="titulo_tabla">Ultimos Movimientos</th>
+          </tr>
+          <tr id="encabezados_tabla">
+            <th scope="col" id="fecha">FECHA</th>
+            <th scope="col" id="concepto">CONCEPTO</th>
+            <th scope="col" id="importe">IMPORTE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="fecha">01/05</td>
+            <td headers="concepto" >CAP INTERES</td>
+            <td headers="importe" id="positive">+0,02</td>
+          </tr>
+          <tr>
+            <td headers="fecha" >06/04</td>
+            <td headers="concepto" >IVA BASE</td>
+            <td headers="importe" id="negative" >-10,50</td>
+          </tr>
+          <tr>
+            <td headers="fecha">04/04</td>
+            <td headers="concepto" >EXTRACCION</td>
+            <td headers="importe" id="negative" >-2500.00</td>
+          </tr>
+          <tr>
+            <td headers="fecha" >01/04</td>
+            <td headers="concepto" >CAP INTERES</td>
+            <td headers="importe" id="positive" >+0,02</td>
+          </tr>
+          <tr>
+            <td headers="fecha">06/03</td>
+            <td headers="concepto" >IVA BASE</td>
+            <td headers="importe" id="negative" >-10,50</td>
+          </tr>
+          <tr>
+            <td headers="fecha" >04/03</td>
+            <td headers="concepto">EXTRACCION</td>
+            <td headers="importe" id="negative">-2500.00</td>
+          </tr>
+        </tbody>
+    </table>
+      </div>
+  </article>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion Home Banking</title>
+    <link href="mi_estilos.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+  <header id="header">
+          <button id="menu-button" type="button" onclick="toggleMainMenu()" onkeypress="toggleMainMenu()" role="button">Menú</button>
+      <div id="logo-banco-nacion">
+          <img id="logo-banco" src="./imgs/bank.png" alt="Logo de Banco">
+          <h2 id="banco-nacion">Banco Nación</h2>
+      </div>
+      <div id="search-and-user">
+          <div id="searcher">
+              <input id="input-search" type="text" name="fname">
+              <button id="button-search" type="submit">
+                  <img id="mag-img" src="./imgs/mag.png" alt="Lupa del buscador">
+              </button>
+          </div>
+          <button onclick="toggleUserMenu()" id="user" onkeypress="toggleUserMenu()" role="button">
+              <span id="user-name">Perez, Pablo</span>
+              <img id="logo-user" src="./imgs/user-logo.png" alt="Logo de una persona">
+          </button>
+      </div>
+  </header>
+  <nav id="main-menu">
+      <h1 class="menu-title">Frecuentes</h1>
+      <a href="#1" class="menu-item">
+          Saldos
+      </a>
+      <a href="#2" class="menu-item">
+          Consulta Alias/CBU
+      </a>
+      <a href="transfer1.html" class="menu-item">
+          Transferencias Simples
+      </a>
+      <a href="#3" class="menu-item">
+          Pagar
+      </a>
+      <a href="#4" class="menu-item">
+          Compra / Venta de dolares
+      </a>
+      <h1 class="menu-title">Otras operaciones</h1>
+      <a href="#5" class="menu-item">
+          Solicitar Soft Token
+      </a>
+      <a href="#6" class="menu-item">
+          Posición Consolidada
+      </a>
+      <a href="#7" class="menu-item">
+          Saldos
+      </a>
+      <a href="#8" class="menu-item">
+          Movimientos
+      </a>
+      <a href="#9" class="menu-item">
+          Consultar Tarjetas de Credito
+      </a>
+      <a href="#10" class="menu-item">
+          Solicitar Tarjeta Adicional
+      </a>
+      <a href="#11" class="menu-item">
+          Telefonia Celular
+      </a>
+      <a href="#12" class="menu-item">
+          Tarjetas Recargables
+      </a>
+      <a href="#13" class="menu-item">
+          Compras en Comercios
+      </a>
+      <a href="#14" class="menu-item">
+          Transportes
+      </a>
+      <a href="#15" class="menu-item">
+          Recarga Servicio Prepago
+      </a>
+      <a href="#16" class="menu-item">
+          Transferencias a destinatarios agendados
+      </a>
+      <a href="#17" class="menu-item">
+          AFIP
+      </a>
+      <a href="#18" class="menu-item">
+          Pagos Realizados
+      </a>
+      <a href="#19" class="menu-item">
+          Servicios Adheridos
+      </a>
+      <a href="#20" class="menu-item">
+          Plazos Fijos
+      </a>
+      <a href="#21" class="menu-item">
+          Fondos Comunes de Inversion
+      </a>
+      <a href="#22" class="menu-item">
+          Documentos Digitales
+      </a>
+      <a href="#23" class="menu-item">
+          Chequeras/Boletas
+      </a>
+      <a href="#24" class="menu-item">
+          Prestamos
+      </a>
+      <a href="#25" class="menu-item">
+          Beneficios Nacion
+      </a>
+      <a href="#26" class="menu-item">
+          Servicio AFIP
+      </a>
+      <a href="#27" class="menu-item">
+          Devolucion de IVA
+      </a>
+      <a href="#28" class="menu-item">
+          Todo Pago
+      </a>
+      <a href="#29" class="menu-item">
+          Beneficios Especiales
+      </a>
+      <a href="#30" class="menu-item">
+          Comparacion de Comisiones
+      </a>
+  </nav>
+  <nav id="user-menu">
+      <h1 id="user-title">Operaciones Personales</h1>
+      <a href="#31" class="user-item">
+          Servicio de Mensajes y Alertas
+      </a>
+      <a href="#32" class="user-item">
+          Aviso de Viaje al Exterior
+      </a>
+      <a href="#33" class="user-item">
+          Aplicativo Link Celular
+      </a>
+      <a href="#34" class="user-item">
+          Datos Personales
+      </a>
+      <a href="#35" class="user-item">
+          Blanqueo de PIL
+      </a>
+      <a href="#36" class="user-item">
+          Blanqueo de PIN
+      </a>
+      <a href="#37" class="user-item">
+          Blanqueo de Tarjeta de Débito
+      </a>
+      <a href="#38" class="user-item">
+          Cerrar Sesión
+      </a>
+  </nav>
+    <article id="main-content">
+      <div id='encabezado_de_ayudas'>
+        <h1>Home Banking</h1>
+        <p>Realizá tus operaciones bancarias habituales sin venir al Banco ni acercarte a un cajero. Operá online las 24 horas.</p>
+        <h2> Como obtener tu clave de Home Banking por cajero automatico</h2>
+      </div>
+      <div id="main_container_ayuda">
+        <video controls alt="videos explicativo para obtener una clave Home Banking. Haga click para escucahrlo">
+          <source src="ayuda.mp4" type="video/mp4">
+          <source src="ayuda.odd" type="video/ogg">
+          <source src="ayuda.webm" type="video/webm">
+          Tu navegador no reproduce videos en HTML5
+          <track id="subtitle" kind="subtitles" srclang="es" label="Español">
+          <track kind="subtitles" id="subtitleIngles" srclang="es" label="Eglish">
+        </video>
+      </div>
+      <div id='encabezado_de_operaciones'>
+        <h2>Alguna de las operaciones disponibles en Home Banking</h2>
+              </div>
+              <div id='lista_operaciones'>
+              <ul class="list-group list-group-horizontal">
+              <li class="list-group-item">
+              <div class="list-group">
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Transferencias</h5>
+                </div>
+                <ul>
+                <li><p class="mb-1">Transferencias simples.</p></li>
+                <li><p class="mb-1">Transferencias agendadas.</p></li>
+                </ul>
+              </div>
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Inversiones</h5>
+                </div>
+                <ul>
+                <li><p class="mb-1">Plazo fijo.</p></li>
+                <li><p class="mb-1">Fondos Comunes de Inversión.</p></li>
+                <li><p class="mb-1">Compra/Venta de dolar.</p></li>
+                </ul>
+              </div>
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Compras</h5>
+                </div>
+                <ul>
+                <li><p class="mb-1">Telefonía celular.</p></li>
+                <li><p class="mb-1">Tarjetas recargables.</p></li>
+                <li><p class="mb-1">Compras en comercios.</p></li>
+                <li><p class="mb-1">Transporte.</p></li>
+                <li><p class="mb-1">Recarga billetera.</p></li>
+                </ul>
+              </div>
+            </div>
+            </li>
+            <li class="list-group-item">
+            <div class="list-group">
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Agenda de pagos</h5>
+              </div>
+              <ul>
+              <li><p class="mb-1">Pagar.</p></li>
+              <li><p class="mb-1">Servicios adheridos.</p></li>
+              <li><p class="mb-1">Pagos realizados</p></li>
+              <li><p class="mb-1">AFIP.</p></li>
+              </ul>
+            </div>
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Prestamos</h5>
+              </div>
+              <ul>
+              <li><p class="mb-1">Pagar.</p></li>
+              <li><p class="mb-1">Personales Nación Ahora.</p></li>
+              <li><p class="mb-1">Consulta de préstamos vigentes</p></li>
+              </ul>
+            </div>
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Prestamos</h5>
+              </div>
+              <ul>
+              <li><p class="mb-1">Pagar.</p></li>
+              <li><p class="mb-1">Personales Nación Ahora.</p></li>
+              <li><p class="mb-1">Consulta de préstamos vigentes</p></li>
+              </ul>
+            </div>
+          </div>
+          </li>
+          <li class="list-group-item">
+          <div class="list-group">
+          <div class="list-group-item">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Cuenta</h5>
+            </div>
+            <ul>
+            <li><p class="mb-1">Saldos.</p></li>
+            <li><p class="mb-1">Movimientos.</p></li>
+            <li><p class="mb-1">Resumen de cuentas.</p></li>
+            <li><p class="mb-1">Límite de extracción.</p></li>
+            <li><p class="mb-1">Consultar Alias/CBU.</p></li>
+            <li><p class="mb-1">Extracto.</p></li>
+            <li><p class="mb-1">Apertura de cuenta.</p></li>
+            <li><p class="mb-1">Estado de trámites.</p></li>
+            </ul>
+          </div>
+          <div class="list-group-item">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Opciones Personales</h5>
+            </div>
+            <ul>
+            <li><p class="mb-1">Aviso de viaje al exterior.</p></li>
+            <li><p class="mb-1">Cambiar clave.</p></li>
+            <li><p class="mb-1">Datos personales.</p></li>
+            <li><p class="mb-1">Blanqueo de PIN/PIL.</p></li>
+            </ul>
+          </div>
+        </div>
+        </li>
+            </ul>
+        </div>
+    </article>
+</body>
+<script>
+  var subtitulo = "V0VCVlRUCgpDdWUtMQowMDowMDowMy4wMDAgLS0+IDAwOjAwOjA5LjAwMAplcyBtdXkgc2ltcGxlLCBlbCBwcmltZXIgcGFzbyBlcyBhY2VyY2FydGUgYSB1biBjYWplcm8gYXV0b21hdGljbyByZWQgbGluayBwb3IgdW5pY2EgdmV6CgpDdWUtMgowMDowMDowOS4wMDAgLS0+IDAwOjAwOjE1LjAwMAp1bmEgdmV6IGVuIGVsIGNhamVybywgaW5ncmVzYSB0dSB0YXJqZXRhIGRlIGRlYml0byB5IGNsYXZlIHBpbi4KYWhvcmEgdGVuZXMgcXVlIHNlZ3VpciBsb3Mgc2lndWllbnRlcyBwYXNvcwoKQ3VlLTMKMDA6MDA6MTUuMDAwIC0tPiAwMDowMDoxNy4wMDAKc2VsZWNjaW9uYSBsYSBvcGNpb24gZ2VzdGlvbiBkZSBjbGF2ZXMKCkN1ZS00CjAwOjAwOjE4LjAwMCAtLT4gMDA6MDA6MjMuMDAwCmx1ZWdvIGVudHJhIGEgSG9tZSBCYW5raW5nLUJhbmNhIE1vdmlsLCBvYnRlbmNpb24gZGUgY2xhdmUgZSBpbmdyZXNhIHVuYSBjb250cmFzZcOxYSBkZSA2IGRpZ2l0b3MKCkN1ZS01CjAwOjAwOjIzLjAwMCAtLT4gMDA6MDA6MjguMDAwCnRlIHJlY29tZW5kYW1vcyBubyB1c2FyIGRhdG9zIHBlcnNvbmFsZXMsIG5pIG51bWVyb3MgaWd1YWxlcyBvIGNvbnNlY3V0aXZvcwoKQ3VlLTYKMDA6MDA6MjguMDAwIC0tPiAwMDowMDozMS4wMDAKbHVlZ28gZGUgZXN0YSBvcGVyYWNpb24sIGVsIGNhamVybyB0ZSBkYXJhIHVuIGNvbXByb2JhbnRlCgpDdWUtNwowMDowMDozMS4wMDAgLS0+IDAwOjAwOjM1LjUwMApndWFyZGFsbyEhIG5vIGxvIHRpcmVzLCBsbyB2YXMgYSBuZWNlc2l0YXIgcGFyYSBjb21wbGV0YXIgZWwgcHJpbWVyIGluZ3Jlc28KCkN1ZS04CjAwOjAwOjM2LjAwMCAtLT4gMDA6MDA6NDAuMDAwCmFob3JhIGRlYmVyYXMgaW5ncmVzYXIgYSB3d3cuYm5hLmNvbS5hcgoKQ3VlLTkKMDA6MDA6NDAuMDAwIC0tPiAwMDowMDo0NC4wMDAKaGFjZXIgY2xpY2sgZW4gSG9tZSBCYW5raW5nLCBlIGluZ3Jlc2FyIGVsIHVzdWFyaW8gYXNpZ25hZG8gcXVlIGVzdGEgZW4gdHUgY29tcHJvYmFudGUKCkN1ZS0xMAowMDowMDo0NC4wMDAgLS0+IDAwOjAwOjQ3LjAwMAplbCBzaXN0ZW1hIHRlIHNvbGljaXRhcmEgYWN0dWFsaXphciB0dXMgZGF0b3MgcGVyc29uYWxlcwoKQ3VlLTExCjAwOjAwOjQ3LjAwMCAtLT4gMDA6MDA6NTAuMDAwCmNhbWJpYXIgdHUgdXN1YXJpbyB5IGNsYXZlIHBvciB1bmEgbnVldmEgY29udHJhc2XDsWEgYWxmYSBudW1lcmljYQoKQ3VlLTEyCjAwOjAwOjUwLjAwMCAtLT4gMDA6MDA6NTIuMDAwCmNvbiBsZXRyYXMgeSBudW1lcm9zIGRlIDggZGlnaXRvcwoKQ3VlLTEzCjAwOjAwOjUyLjAwMCAtLT4gMDA6MDA6NTYuMDAwCnJlY29yZGEgcXVlIGNhZGEgdmV6IHF1ZSBxdWllcmFzIGluZ3Jlc2FyIHNlIHRlIHZhIGEgc29saWNpdGFyIGVzdGEgaW5mb3JtYWNpb24KCkN1ZS0xNAowMDowMDo1Ni4wMDAgLS0+IDAwOjAxOjAxLjAwMApsaXN0bywgeWEgZXN0YSwgYWhvcmEgeWEgcG9kZXMgb3BlcmFyIGRlc2RlIHR1IGNvbXB1dGFkb3JhLCBjZWx1bGFyLCBvIHRhYmxldAoKQ3VlLTE1CjAwOjAxOjAxLjAwMCAtLT4gMDA6MDE6MDYuMDAwCnkgcmVhbGl6YXIgcGFnb3MsIHRyYW5zZmVyZW5jaWFzLCBjb25zdWx0YXMsIHJlY2FyZ2FzLCB5IG11Y2hhcyBvcGVyYWNpb25lcyBtYXMKCkN1ZS0xNgowMDowMTowNi4wMDAgLS0+IDAwOjAxOjA5LjAwMApIb21lQmFua2luZywgdHUgYmFuY28gbGFzIDI0IGhvcmFzCg==";
+  subtitle = window.atob(subtitulo);
+  var subBlob = new Blob([subtitle]);
+  var subURL = URL.createObjectURL(subBlob);
+    document.getElementById("subtitle").setAttribute("src", subURL);
+
+  var subtituloIngles ="V0VCVlRUCgpDdWUtMQowMDowMDowMy4wMDAgLS0+IDAwOjAwOjA5LjAwMAppdCBpcyB2ZXJ5IHNpbXBsZSwgdGhlIGZpcnN0IHN0ZXAgaXMgdG8gYXBwcm9hY2ggYW4gQVRNIG9uZSB0aW1lCgpDdWUtMgowMDowMDowOS4wMDAgLS0+IDAwOjAwOjE1LjAwMApvbmNlIGF0IHRoZSBBVE0sIGVudGVyIHlvdXIgZGViaXQgY2FyZCBhbmQgcGluIGNvZGUuCm5vdyB5b3UgaGF2ZSB0byBmb2xsb3cgdGhlIG5leHQgc3RlcHMKCkN1ZS0zCjAwOjAwOjE1LjAwMCAtLT4gMDA6MDA6MTcuMDAwCnNlbGVjdCB0aGUga2V5IG1hbmFnZW1lbnQgb3B0aW9uCgpDdWUtNAowMDowMDoxOC4wMDAgLS0+IDAwOjAwOjIzLjAwMAp0aGVuIGVudGVyIEhvbWUgQmFua2luZy1Nb2JpbGUgQmFua2luZywgb2J0YWluIGEgcGFzc3dvcmQgYW5kIGVudGVyIGEgNi1kaWdpdCBwYXNzd29yZAoKQ3VlLTUKMDA6MDA6MjMuMDAwIC0tPiAwMDowMDoyOC4wMDAKd2UgcmVjb21tZW5kIHlvdSBub3QgdG8gdXNlIHBlcnNvbmFsIGRhdGEsIG5vciB0aGUgc2FtZSBvciBjb25zZWN1dGl2ZSBudW1iZXJzCgpDdWUtNgowMDowMDoyOC4wMDAgLS0+IDAwOjAwOjMxLjAwMAphZnRlciB0aGlzIG9wZXJhdGlvbiwgdGhlIGNhc2hpZXIgd2lsbCBnaXZlIHlvdSBhIHJlY2VpcHQKCkN1ZS03CjAwOjAwOjMxLjAwMCAtLT4gMDA6MDA6MzUuNTAwClNhdmUgaXQhISBkbyBub3QgdGhyb3cgaXQgYXdheSwgeW91IHdpbGwgbmVlZCBpdCB0byBjb21wbGV0ZSB0aGUgZmlyc3QgZW50cnkKCkN1ZS04CjAwOjAwOjM2LjAwMCAtLT4gMDA6MDA6NDAuMDAwCk5vdyB5b3UgbXVzdCBlbnRlciB3d3cuYm5hLmNvbS5hcgoKQ3VlLTkKMDA6MDA6NDAuMDAwIC0tPiAwMDowMDo0NC4wMDAKY2xpY2sgb24gSG9tZSBCYW5raW5nLCBhbmQgZW50ZXIgdGhlIGFzc2lnbmVkIHVzZXIgdGhhdCBpcyBvbiB5b3VyIHJlY2VpcHQKCkN1ZS0xMAowMDowMDo0NC4wMDAgLS0+IDAwOjAwOjQ3LjAwMAp0aGUgc3lzdGVtIHdpbGwgYXNrIHlvdSB0byB1cGRhdGUgeW91ciBwZXJzb25hbCBkYXRhCgpDdWUtMTEKMDA6MDA6NDcuMDAwIC0tPiAwMDowMDo1MC4wMDAKY2hhbmdlIHlvdXIgdXNlcm5hbWUgYW5kIHBhc3N3b3JkIGZvciBhIG5ldyBhbHBoYSBudW1lcmljIHBhc3N3b3JkCgpDdWUtMTIKMDA6MDA6NTAuMDAwIC0tPiAwMDowMDo1Mi4wMDAKd2l0aCA4LWRpZ2l0IGxldHRlcnMgYW5kIG51bWJlcnMKCkN1ZS0xMwowMDowMDo1Mi4wMDAgLS0+IDAwOjAwOjU2LjAwMApyZW1lbWJlciB0aGF0IGV2ZXJ5IHRpbWUgeW91IHdhbnQgdG8gZW50ZXIgeW91IHdpbGwgYmUgYXNrZWQgZm9yIHRoaXMgaW5mb3JtYXRpb24KCkN1ZS0xNAowMDowMDo1Ni4wMDAgLS0+IDAwOjAxOjAxLjAwMApyZWFkeSwgdGhhdCdzIGl0LCBub3cgeW91IGNhbiBvcGVyYXRlIGZyb20geW91ciBjb21wdXRlciwgY2VsbCBwaG9uZSwgb3IgdGFibGV0CgpDdWUtMTUKMDA6MDE6MDEuMDAwIC0tPiAwMDowMTowNi4wMDAKYW5kIG1ha2UgcGF5bWVudHMsIHRyYW5zZmVycywgY29uc3VsdGF0aW9ucywgcmVjaGFyZ2VzLCBhbmQgbWFueSBtb3JlIG9wZXJhdGlvbnMKCkN1ZS0xNgowMDowMTowNi4wMDAgLS0+IDAwOjAxOjA5LjAwMApIb21lQmFua2luZywgeW91ciBiYW5rIDI0IGhvdXJz"
+  subtituloIngles = window.atob(subtituloIngles);
+  var subBlobIngles = new Blob([subtituloIngles]);
+  var subURLIngles = URL.createObjectURL(subBlobIngles);
+    document.getElementById("subtitleIngles").setAttribute("src", subURLIngles);
+</script>
+</html>

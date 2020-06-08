@@ -246,7 +246,6 @@ a{
 /* Campos de formularios */
 
 .btn {
-    position: relative;
     display: inline-block;
     box-sizing: border-box;
     border: none;
@@ -277,7 +276,6 @@ a{
 }
 
 .sel {
-	position: relative;
 	background-color: #f0e8e8;
 	width: 350px;
 	padding: 10px 0px 10px 0;

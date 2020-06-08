@@ -1,0 +1,61 @@
+#main_container_cuenta{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+#lista_operaciones{
+  width: 50%;
+  margin: auto;
+}
+#main_container_ayuda{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+#encabezado_de_operaciones{
+  width: 50%;
+  margin: 50px auto;
+  text-align: left;
+}
+
+#encabezado_de_cuentas{
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  color:gray;
+}
+
+#encabezado_de_ayudas{
+  width: 50%;
+  margin: 50px auto;
+  text-align: left;
+}
+
+#titulo_tabla{
+  background:#0D737C;
+  color:white;
+}
+
+h1,h2{
+  color:#0D737C;
+}
+
+#encabezados_tabla{
+  color:#0D737C;
+}
+
+#negative{
+  color:red;
+}
+
+#positive{
+  color:green;
+}
+
+p{
+  color:black;
+}
+
+li{
+  color:black;
+}
