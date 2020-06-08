@@ -12,66 +12,66 @@ body{
     margin: 0;
 }
 
-#body{
-    display: flex;
-    flex-direction: column;
-}
-
-#header-1{
-    display: flex;
-    justify-content: center;
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 100%);
-}
-
-#header-1-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    margin: 5px;
-}
-
-#header-2{
+#header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 100%);
     border-bottom-style: solid;
-    border-bottom-color: #00497b;
+    border-bottom-color: #bbdefb;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
-#header-2-1{
+#logo-banco-nacion{
     display: flex;
-}
-
-#header-2-2{
-    display: flex;
-}
-
-#header-2-3{
-    display: flex;
-    align-items: center;
 }
 
 #main{
     display: flex;
     flex: 1;
+    margin-top: 50px;
 }
 
-#main-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    background-color: #00497b;
+#main-menu{
+    display: block;
+    padding: 2px;
+    background-color: #f5f5f5;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #bbdefb;
+    overflow-y: auto;
+    position: fixed;
+    width: 300px;
+    margin-top: 50px;
+    height: calc(100% - 52px);
 }
 
-#main-2{
+#main-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
+    margin: 50px;
+}
+#user-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    padding: 2px;
+    align-items: center;
+    flex: 1;
+    background-color: #F5F5F5;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-color: #bbdefb;
+    margin-top: 50px;
 }
 
 /* Otros */
@@ -82,10 +82,22 @@ body{
     height: 32px;
 }
 
-.menu-item{
+.user-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 30px;
+    border-radius: 2px;
+    color: #202020;
     margin-top: 2px;
     margin-bottom: 2px;
     width: 100%;
+}
+
+.user-item:hover{
+    background-color: #202020;
+    color: #ffffff;
 }
 
 p{
@@ -93,14 +105,15 @@ p{
 }
 
 #logo-banco{
-    height: 45px;
-    width: 45px;
+    height: 32px;
+    width: 32px;
 }
 
 #banco-nacion{
     margin-left: 5px;
     font-size: 32px;
     color: #ffffff;
+    margin: 0px 0px 0px 5px
 }
 
 #user-name{
@@ -128,6 +141,10 @@ p{
     border-radius: 2px;
 }
 
+#input-search:focus{
+    outline: 2px solid#5d99c6;
+}
+
 #button-search{
     display: flex;
     flex: 1;
@@ -135,26 +152,18 @@ p{
     background-color: #ffffff;
 }
 
-.frequent{
-    display: flex;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 25px;
-    align-items: center;
-    border-radius: 2px;
-    border-width: 2px;
-    border-style: solid;
-    color: #202020;
-    border-color: #ffffff;
-    background-color: #ffffff;
+#button-search:focus{
+    outline: 2px solid#5d99c6;
 }
 
-#menu-title{
-    color: #ffffff;
-    margin-top: 5px;
-    margin-bottom: 10px;
+.menu-title{
+    color: #202020;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #menu-button{
@@ -164,8 +173,22 @@ p{
     padding: 5px;
     height: 30px;
     border-radius: 2px;
+    border-color: #ffffff;
     background-color: transparent;
     color: #ffffff;
+}
+
+#menu-button:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #202020;
+    border-color: #5d99c6;
+}
+
+#menu-button:focus{
+    background-color: #ffffff;
+    color: #202020;
+    border-color: #5d99c6;
 }
 
 #user{
@@ -173,19 +196,52 @@ p{
     align-items: center;
     border: 0;
     margin-left: 15px;
+    margin-right: 5px;
     background-color: transparent;
     color: #ffffff;
+}
+
+#search-and-user{
+    display: flex;
+}
+
+#user:hover{
+    cursor: pointer;
+    outline: 2px solid#5d99c6;
 }
 
 .menu-item{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #ffffff;
     height: 30px;
     border-radius: 2px;
+    color: #202020;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.menu-item:hover{
+    background-color: #202020;
+    color: #ffffff;
 }
 
 a{
     text-decoration: none;
 }
+
+#user-title{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 650px) {
+    #logo-banco, #banco-nacion, #user-name{
+        display: none;
+    }
+    #main-content{
+        margin: 70px 20px 20px 20px;
+    }
+  }
