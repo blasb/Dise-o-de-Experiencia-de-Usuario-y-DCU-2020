@@ -153,19 +153,18 @@
     </nav>
     <article id="main-content">
         <h1>Realizar transferencia</h1>
-        <h1>Realizar transferencia</h1>
         <h2>Paso 2 de 4</h2>
         <h3>Ingrese CBU o alias de la cuenta destino</h3>
         <p>Los campos marcados con * son obligatorios</p>
         <form action="transfer3.html">
             <label for="type">Tipo:</label>
-            <select name="type" id="type">
+            <select class="sel" name="type" id="type">
                 <option value="CBU">CBU</option>
                 <option value="alias">Alias</option>
             </select>
             <br>
             <label for="aliasCBU">Alias/CBU*:</label>
-            <input required type="text" id="aliasCBU" name="aliasCBU"/>
+            <input class="inp" required type="text" id="aliasCBU" name="aliasCBU"/>
             <br>
             <button class="btn cancel" type="button" onclick="location.href='index.html';">Cancelar</button>
             <button class="btn" type="button" onclick="location.href='transfer1.html';">Volver</button>
