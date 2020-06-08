@@ -1,0 +1,191 @@
+/* Containers */
+
+html{
+    display: flex;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+}
+
+#body{
+    display: flex;
+    flex-direction: column;
+}
+
+#header-1{
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 100%);
+}
+
+#header-1-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+#header-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 100%);
+    border-bottom-style: solid;
+    border-bottom-color: #00497b;
+}
+
+#header-2-1{
+    display: flex;
+}
+
+#header-2-2{
+    display: flex;
+}
+
+#header-2-3{
+    display: flex;
+    align-items: center;
+}
+
+#main{
+    display: flex;
+    flex: 1;
+}
+
+#main-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: #00497b;
+}
+
+#main-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+/* Otros */
+
+#logo-user{
+    margin-left: 5px;
+    width: 32px;
+    height: 32px;
+}
+
+.menu-item{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+p{
+    margin: 0;
+}
+
+#logo-banco{
+    height: 45px;
+    width: 45px;
+}
+
+#banco-nacion{
+    margin-left: 5px;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+#user-name{
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#mag-img{
+    height: 20px;
+    width: 20px;
+}
+
+#searcher{
+    display: flex;
+    padding: 2px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+#input-search{
+    flex: 1;
+    border: none;
+    height: 25px;
+    border-radius: 2px;
+}
+
+#button-search{
+    display: flex;
+    flex: 1;
+    border: none;
+    background-color: #ffffff;
+}
+
+.frequent{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 25px;
+    align-items: center;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+    color: #202020;
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+
+#menu-title{
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#menu-button{
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#user{
+    display: flex;
+    align-items: center;
+    border: 0;
+    margin-left: 15px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 30px;
+    border-radius: 2px;
+}
+
+a{
+    text-decoration: none;
+}
