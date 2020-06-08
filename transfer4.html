@@ -8,89 +8,162 @@
     <script src="./index.js"></script>
 </head>
 <body>
-    <div id="header-1">
-        <div id="header-1-1">
+    <header id="header">
+            <button id="menu-button" type="button" onclick="toggleMainMenu()">Menú</button>
+        <div id="logo-banco-nacion">
             <img id="logo-banco" src="./imgs/bank.png" alt="Logo de Banco">
-            <p id="banco-nacion">Banco Nación</p>
+            <h2 id="banco-nacion">Banco Nación</h2>
         </div>
-    </div>
-    <div id="header-2">
-        <div id="header-2-1">
-            <button id="menu-button" type="button" onclick="toggleMenu()">Menú</button>
-        </div>
-        <div id="header-2-2">
-            <a href="#" class="frequent">
-                Frecuente1
-            </a>
-            <a href="#" class="frequent">
-                Frecuente2
-            </a>
-            <a href="#" class="frequent">
-                Frecuente3
-            </a>
-        </div>
-        <div id="header-2-3">
+        <div id="search-and-user">
             <div id="searcher">
                 <input id="input-search" type="text" name="fname">
                 <button id="button-search" type="submit">
                     <img id="mag-img" src="./imgs/mag.png" alt="Lupa">
                 </button>
             </div>
-            <button id="user">
-                Perez, Pablo
+            <button onclick="toggleUserMenu()" id="user">
+                <span id="user-name">Perez, Pablo</span>
                 <img id="logo-user" src="./imgs/user-logo.png" alt="Logo de una persona">
             </button>
-                
         </div>
-    </div>
-    <div id="main">
-        <div id="main-1">
-            <p id="menu-title">Otras operaciones</p>
-            <a href="#" class="menu-item">
-                Compras
-            </a>
-            <a href="#" class="menu-item">
-                Inversiones
-            </a>
-            <a href="#" class="menu-item">
-                Documentos Digitales
-            </a>
-            <a href="#" class="menu-item">
-                Chequeras/Boletas
-            </a>
-            <a href="#" class="menu-item">
-                Devolucion de IVA
-            </a>
-            <a href="#" class="menu-item">
-                Compras
-            </a>
-            <a href="#" class="menu-item">
-                Inversiones
-            </a>
-            <a href="#" class="menu-item">
-                Documentos Digitales
-            </a>
-            <a href="#" class="menu-item">
-                Chequeras/Boletas
-            </a>
-            <a href="#" class="menu-item">
-                Devolucion de IVA
-            </a>
-        </div>
-        <div id="main-2">
-            <h1>Realizar transferencia</h1>
-            <h2>Paso 4 de 4</h2>
-            <h3>Confirme la operación</h3>
-            <form action="transferSuccess.html">
-                <p>Se transfieren $XXXX</p>
-                <p>De la cuenta origen 2103971209</p>
-                <p>A la cuenta destino 2098012908</p>
-                <input type="button" onclick="location.href='transfer3.html';" value="Volver"/>
-                <input type="submit" value="Confirmar"/>
-                <br>
-                <input type="button" onclick="location.href='index.html';" value="Cancelar"/>
-            </form>
-        </div>
-    </div>
+    </header>
+    <nav id="main-menu">
+        <h1 class="menu-title">Frecuentes</h1>
+        <a href="#" class="menu-item">
+            Saldos
+        </a>
+        <a href="#" class="menu-item">
+            Consulta Alias/CBU
+        </a>
+        <a href="#" class="menu-item">
+            Transferencias Simples
+        </a>
+        <a href="#" class="menu-item">
+            Pagar
+        </a>
+        <a href="#" class="menu-item">
+            Compra / Venta de dolares
+        </a>
+        <h1 class="menu-title">Otras operaciones</h1>
+        <a href="#" class="menu-item">
+            Solicitar Soft Token
+        </a>
+        <a href="#" class="menu-item">
+            Posición Consolidada
+        </a>
+        <a href="#" class="menu-item">
+            Saldos
+        </a>
+        <a href="#" class="menu-item">
+            Movimientos
+        </a>
+        <a href="#" class="menu-item">
+            Consultar Tarjetas de Credito
+        </a>
+        <a href="#" class="menu-item">
+            Solicitar Tarjeta Adicional
+        </a>
+        <a href="#" class="menu-item">
+            Telefonia Celular
+        </a>
+        <a href="#" class="menu-item">
+            Tarjetas Recargables
+        </a>
+        <a href="#" class="menu-item">
+            Compras en Comercios
+        </a>
+        <a href="#" class="menu-item">
+            Transportes
+        </a>
+        <a href="#" class="menu-item">
+            Recarga Servicio Prepago
+        </a>
+        <a href="#" class="menu-item">
+            Transferencias a destinatarios agendados
+        </a>
+        <a href="#" class="menu-item">
+            AFIP
+        </a>
+        <a href="#" class="menu-item">
+            Pagos Realizados
+        </a>
+        <a href="#" class="menu-item">
+            Servicios Adheridos
+        </a>
+        <a href="#" class="menu-item">
+            Plazos Fijos
+        </a>
+        <a href="#" class="menu-item">
+            Fondos Comunes de Inversion
+        </a>
+        <a href="#" class="menu-item">
+            Documentos Digitales
+        </a>
+        <a href="#" class="menu-item">
+            Chequeras/Boletas
+        </a>
+        <a href="#" class="menu-item">
+            Prestamos
+        </a>
+        <a href="#" class="menu-item">
+            Beneficios Nacion
+        </a>
+        <a href="#" class="menu-item">
+            Servicio AFIP
+        </a>
+        <a href="#" class="menu-item">
+            Devolucion de IVA 
+        </a>
+        <a href="#" class="menu-item">
+            Todo Pago
+        </a>
+        <a href="#" class="menu-item">
+            Beneficios Especiales
+        </a>
+        <a href="#" class="menu-item">
+            Comparacion de Comisiones
+        </a>
+    </nav>
+    <nav id="user-menu">
+        <h1 id="user-title">Operaciones Personales</h1>
+        <a href="#" class="user-item">
+            Servicio de Mensajes y Alertas
+        </a>
+        <a href="#" class="user-item">
+            Aviso de Viaje al Exterior
+        </a>
+        <a href="#" class="user-item">
+            Aplicativo Link Celular
+        </a>
+        <a href="#" class="user-item">
+            Datos Personales
+        </a>
+        <a href="#" class="user-item">
+            Blanqueo de PIL
+        </a>
+        <a href="#" class="user-item">
+            Blanqueo de PIN
+        </a>
+        <a href="#" class="user-item">
+            Blanqueo de Tarjeta de Débito
+        </a>
+        <a href="#" class="user-item">
+            Cerrar Sesión
+        </a>
+    </nav>
+    <article id="main-content">
+        <h1>Realizar transferencia</h1>
+        <h2>Paso 4 de 4</h2>
+        <h3>Confirme la operación</h3>
+        <form action="transferSuccess.html">
+            <p>Se transfieren $XXXX</p>
+            <p>De la cuenta origen 2103971209</p>
+            <p>A la cuenta destino 2098012908</p>
+            <input type="button" onclick="location.href='transfer3.html';" value="Volver"/>
+            <input type="submit" value="Confirmar"/>
+            <br>
+            <input type="button" onclick="location.href='index.html';" value="Cancelar"/>
+        </form>
+    </article>
 </body>
 </html>
