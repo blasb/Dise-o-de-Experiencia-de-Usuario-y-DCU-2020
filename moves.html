@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Banking Nacion</title>
-    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
     <script src="./index.js"></script>
 </head>
 <body>
     <header id="header">
             <button id="menu-button" type="button" onclick="toggleMainMenu()" role="button">Menú</button>
-        <a id="logo-banco-nacion" href="index.html">
+        <a id="logo-banco-nacion" href="home.html">
             <img id="logo-banco" src="./imgs/bank.png" alt="Logo de Banco">
             <span id="banco-nacion">Banco Nación</span>
         </a>
         <div id="search-and-user">
             <div id="searcher">
-                <input id="input-search" type="text" name="fname">
+                <input id="input-search" type="text" name="fname" aria-label="Buscar">
                 <button id="button-search" type="submit">
                     <img id="mag-img" src="./imgs/mag.png" alt="Lupa del buscador">
                 </button>
@@ -29,11 +29,8 @@
     </header>
     <nav id="main-menu">
         <h2 class="menu-title">Frecuentes</h2>
-        <a href="#1" class="menu-item">
-            Saldos
-        </a>
-        <a href="#2" class="menu-item">
-            Consulta Alias/CBU
+        <a href="moves.html" class="menu-item">
+            Movimientos
         </a>
         <a href="transfer1.html" class="menu-item">
             Transferencias Simples
@@ -41,10 +38,16 @@
         <a href="#3" class="menu-item">
             Pagar
         </a>
+        <h2 class="menu-title">Otras operaciones</h2>
         <a href="#4" class="menu-item">
             Compra / Venta de dolares
         </a>
-        <h2 class="menu-title">Otras operaciones</h2>
+        <a href="#1" class="menu-item">
+            Saldos
+        </a>
+        <a href="#2" class="menu-item">
+            Consulta Alias/CBU
+        </a>
         <a href="#5" class="menu-item">
             Solicitar Soft Token
         </a>
@@ -53,9 +56,6 @@
         </a>
         <a href="#7" class="menu-item">
             Saldos
-        </a>
-        <a href="movimientos.html" class="menu-item">
-            Movimientos
         </a>
         <a href="#9" class="menu-item">
             Consultar Tarjetas de Credito
@@ -79,7 +79,7 @@
             Recarga Servicio Prepago
         </a>
         <a href="#16" class="menu-item">
-            Transferencias a destinatarios agendados
+            Transferencias agendadas
         </a>
         <a href="#17" class="menu-item">
             AFIP
@@ -150,7 +150,7 @@
         <a href="config.html" class="user-item">
             Configuracion
         </a>
-        <a href="Informacion.html" class="user-item">
+        <a href="info.html" class="user-item">
             Cerrar Sesión
         </a>
     </nav>
@@ -208,15 +208,5 @@
             </tbody>
         </table>
     </article>
-</body>
-</html>" >04/03</td>
-            <td headers="concepto">EXTRACCION</td>
-            <td headers="importe">-2500.00</td>
-          </tr>
-        </tbody>
-    </table>
-      </div>
-  </article>
-
 </body>
 </html>
