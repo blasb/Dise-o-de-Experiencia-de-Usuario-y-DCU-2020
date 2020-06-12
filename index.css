@@ -67,6 +67,7 @@ h1{
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 99999;
 }
 
 /* Header - Menu Button */
