@@ -9,11 +9,11 @@
 </head>
 <body>
     <header id="header">
-            <button id="menu-button" type="button" onclick="toggleMainMenu()" onkeypress="toggleMainMenu()" role="button">Menú</button>
-        <div id="logo-banco-nacion">
+            <button id="menu-button" type="button" onclick="toggleMainMenu()" role="button">Menú</button>
+        <a id="logo-banco-nacion" href="index.html">
             <img id="logo-banco" src="./imgs/bank.png" alt="Logo de Banco">
-            <a href="index.html"><h2 id="banco-nacion">Banco Nación</h2></a>
-        </div>
+            <h2 id="banco-nacion">Banco Nación</h2>
+        </a>
         <div id="search-and-user">
             <div id="searcher">
                 <input id="input-search" type="text" name="fname">
@@ -21,7 +21,7 @@
                     <img id="mag-img" src="./imgs/mag.png" alt="Lupa del buscador">
                 </button>
             </div>
-            <button onclick="toggleUserMenu()" id="user" onkeypress="toggleUserMenu()" role="button">
+            <button onclick="toggleUserMenu()" id="user" role="button">
                 <span id="user-name">Perez, Pablo</span>
                 <img id="logo-user" src="./imgs/user-logo.png" alt="Logo de una persona">
             </button>

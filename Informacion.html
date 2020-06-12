@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informacion Home Banking</title>
-    <link href="mi_estilos.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./index.css">
     <script src="./index.js"></script>
 </head>
@@ -23,12 +21,12 @@
     </div>
     </header>
     <article id="main-content">
-      <div id='encabezado_de_ayudas'>
+      <section id="presentation-section">
         <h1>Home Banking</h1>
         <p>Realizá tus operaciones bancarias habituales sin venir al Banco ni acercarte a un cajero. Operá online las 24 horas.</p>
+      </section>
+      <section id="video-section">
         <h2> Como obtener tu clave de Home Banking por cajero automatico</h2>
-      </div>
-      <div id="main_container_ayuda">
         <video controls>
           <source src="ayuda.mp4" type="video/mp4">
           <source src="ayuda.odd" type="video/ogg">
@@ -37,114 +35,44 @@
           <track id="subtitle" kind="subtitles" srclang="es" label="Español">
           <track kind="subtitles" id="subtitleIngles" srclang="es" label="Eglish">
         </video>
-      </div>
-      <div id='encabezado_de_operaciones'>
-        <h2>Alguna de las operaciones disponibles en Home Banking</h2>
-              </div>
-              <div id='lista_operaciones'>
-              <ul class="list-group list-group-horizontal">
-              <li class="list-group-item">
-              <div class="list-group">
-              <div class="list-group-item">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Transferencias</h5>
-                </div>
-                <ul>
-                <li><p class="mb-1">Transferencias simples.</p></li>
-                <li><p class="mb-1">Transferencias agendadas.</p></li>
-                </ul>
-              </div>
-              <div class="list-group-item">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Inversiones</h5>
-                </div>
-                <ul>
-                <li><p class="mb-1">Plazo fijo.</p></li>
-                <li><p class="mb-1">Fondos Comunes de Inversión.</p></li>
-                <li><p class="mb-1">Compra/Venta de dolar.</p></li>
-                </ul>
-              </div>
-              <div class="list-group-item">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Compras</h5>
-                </div>
-                <ul>
-                <li><p class="mb-1">Telefonía celular.</p></li>
-                <li><p class="mb-1">Tarjetas recargables.</p></li>
-                <li><p class="mb-1">Compras en comercios.</p></li>
-                <li><p class="mb-1">Transporte.</p></li>
-                <li><p class="mb-1">Recarga billetera.</p></li>
-                </ul>
-              </div>
-            </div>
-            </li>
-            <li class="list-group-item">
-            <div class="list-group">
-            <div class="list-group-item">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Agenda de pagos</h5>
-              </div>
-              <ul>
-              <li><p class="mb-1">Pagar.</p></li>
-              <li><p class="mb-1">Servicios adheridos.</p></li>
-              <li><p class="mb-1">Pagos realizados</p></li>
-              <li><p class="mb-1">AFIP.</p></li>
-              </ul>
-            </div>
-            <div class="list-group-item">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Prestamos</h5>
-              </div>
-              <ul>
-              <li><p class="mb-1">Pagar.</p></li>
-              <li><p class="mb-1">Personales Nación Ahora.</p></li>
-              <li><p class="mb-1">Consulta de préstamos vigentes</p></li>
-              </ul>
-            </div>
-            <div class="list-group-item">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Prestamos</h5>
-              </div>
-              <ul>
-              <li><p class="mb-1">Pagar.</p></li>
-              <li><p class="mb-1">Personales Nación Ahora.</p></li>
-              <li><p class="mb-1">Consulta de préstamos vigentes</p></li>
-              </ul>
-            </div>
-          </div>
-          </li>
-          <li class="list-group-item">
-          <div class="list-group">
-          <div class="list-group-item">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Cuenta</h5>
-            </div>
-            <ul>
-            <li><p class="mb-1">Saldos.</p></li>
-            <li><p class="mb-1">Movimientos.</p></li>
-            <li><p class="mb-1">Resumen de cuentas.</p></li>
-            <li><p class="mb-1">Límite de extracción.</p></li>
-            <li><p class="mb-1">Consultar Alias/CBU.</p></li>
-            <li><p class="mb-1">Extracto.</p></li>
-            <li><p class="mb-1">Apertura de cuenta.</p></li>
-            <li><p class="mb-1">Estado de trámites.</p></li>
-            </ul>
-          </div>
-          <div class="list-group-item">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Opciones Personales</h5>
-            </div>
-            <ul>
-            <li><p class="mb-1">Aviso de viaje al exterior.</p></li>
-            <li><p class="mb-1">Cambiar clave.</p></li>
-            <li><p class="mb-1">Datos personales.</p></li>
-            <li><p class="mb-1">Blanqueo de PIN/PIL.</p></li>
-            </ul>
-          </div>
-        </div>
-        </li>
-            </ul>
-        </div>
+      </section>
+<section id="more-operation-section">
+  <h2>Alguna de las operaciones disponibles en Home Banking</h2>
+  <dl class="dl-1">
+    <dt class="dt-1">Restablecer Usuario.</dt>
+      <dd class="dd-1">Blanqueo de clave.</dd>
+      <dd class="dd-1">Desbloqueo de usuario.</dd>
+    </dt>
+    <dt class="dt-1">Opciones Personales</dt>
+      <dd class="dd-1">Servicio de mensajes y alertas.</dd>
+      <dd class="dd-1">Aviso de viaje al exterior.</dd>
+      <dd class="dd-1">Cambiar clave.</dd>
+      <dd class="dd-1">Datos personales.</dd>
+      <dd class="dd-1">Blanqueo de PIN/PIL.</dd>
+    </dt>
+    <dt class="dt-1">Cuentas</dt>
+      <dd class="dd-1">Saldos.</dd>
+      <dd class="dd-1">Movimientos.</dd>
+      <dd class="dd-1">Resumen de cuentas.</dd>
+      <dd class="dd-1">Límite de extracción.</dd>
+      <dd class="dd-1">Consultar Alias/CBU</dd>
+      <dd class="dd-1">Extracto.</dd>
+      <dd class="dd-1">Tenencia al 31/12.</dd>
+      <dd class="dd-1">Orden de extracción (Punto Efectivo).</dd>
+      <dd class="dd-1">Apertura de cuenta.</dd>
+      <dd class="dd-1">Estado de trámites.</dd>
+    </dt>
+    <dt class="dt-1">Transferencias a destinatarios agendados.</dt>
+      <dd class="dd-1">Transferir.</dd>
+      <dd class="dd-1">Administrar agenda.</dd>
+      <dd class="dd-1">Consulta de transferencias realizadas.</dd>
+      <dd class="dd-1">Solicitud de transferencias superior (TIS).</dd>
+      <dd>Transferencias programadas.</dd>
+    <dt class="dt-1">Transferencias Simples.</dt>
+      <dd class="dd-1">Transferir.</dd>
+      <dd class="dd-1">Consulta de transferencias realizadas.</dd>
+  </dl>
+</section>
     </article>
 </body>
 <script>
