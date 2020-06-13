@@ -1,0 +1,13 @@
+.arrow {
+    height: 24px;
+    width: 24px;
+}
+
+.cuenta {
+    border: 2px;
+    border-color: darkgrey;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    padding: 1%;
+}
