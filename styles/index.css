@@ -37,6 +37,7 @@ body{
     --secondary-color-light: #eeffff;
     --secondary-color-dark: #8aacc8;
     --text-on-secondary: #000000;
+    background-color: #F5F5FF;
 }
 
 p{
@@ -193,13 +194,14 @@ h1{
     display: none;
     padding: 2px;
     background-color: var(--primary-color);
-    border-right-style: solid;
-    border-right-width: 1px;
     overflow-y: auto;
     position: fixed;
     width: 300px;
     margin-top: 47px;
     height: calc(100% - 52px);
+    -webkit-box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.75);
 }
 
 .menu-title{
@@ -237,8 +239,12 @@ h1{
     flex-direction: column;
     align-items: center;
     flex: 1;
-    margin: 50px 50px 0px 50px;
-    padding-bottom: 50px;
+    margin: 0px 150px 0px 150px;
+    padding: 50px 20px 50px 20px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
 }
 
 /* User Menu */
