@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Banking Nacion</title>
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" type="text/css" href="./styles/forms.css">
     <script src="./index.js"></script>
 </head>
 <body>
@@ -158,13 +159,15 @@
         <h1>Realizar transferencia</h1>
         <h2>Paso 4 de 4</h2>
         <h3>Confirme la operación</h3>
-        <form action="transferSuccess.html">
-            <p>Se transfieren $XXXX</p>
-            <p>De la cuenta origen 2103971209</p>
-            <p>A la cuenta destino 2098012908</p>
-            <button class="btn cancel" type="button" onclick="location.href='home.html';" onkeypress="location.href='home.html';" role="button">Cancelar</button>
-            <button class="btn" type="button" onclick="location.href='transfer3.html';" onkeypress="location.href='transfer3.html';" role="button">Volver</button>
-            <button class="btn">Confirmar</button>
+        <form class="form" action="transferSuccess.html">
+            <p class="p-form"> <strong>Se transfieren:</strong> $XXXX</p>
+            <p class="p-form"> <strong>De la cuenta origen:</strong> 2103971209</p>
+            <p class="p-form"> <strong>A la cuenta destino:</strong> 2098012908</p>
+            <div class="container-buttons-form">
+                <button class="btn cancel" type="button" onclick="location.href='home.html';" onkeypress="location.href='home.html';" role="button">Cancelar</button>
+                <button class="btn" type="button" onclick="location.href='transfer3.html';" onkeypress="location.href='transfer3.html';" role="button">Volver</button>
+                <button class="btn btn-accept">Confirmar</button>
+            </div>
         </form>
     </article>
 </body>

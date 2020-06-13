@@ -252,7 +252,7 @@ h1{
     padding: 2px;
     align-items: center;
     flex: 1;
-    background-color: var(--primary-color-dark);
+    background-color: var(--primary-color);
     border-left-style: solid;
     border-bottom-style: solid;
     border-left-width: 1px;
@@ -282,119 +282,6 @@ h1{
 .user-item:hover{
     background-color: var(--primary-color);
 }
-
-/* Campos de formularios */
-
-.btn {
-    display: inline-block;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 4px;
-    padding: 0 16px;
-    min-width: 64px;
-    height: 36px;
-    vertical-align: middle;
-    text-align: center;
-    text-overflow: ellipsis;
-    text-transform: uppercase;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 36px;
-    overflow: hidden;
-    outline: none;
-    cursor: pointer;
-    transition: box-shadow 0.2s;
-    
-    background-color: #429edc;
-    color: #ecf0f1;   
-}
-
-.cancel {
-    background-color: #c01111;
-}
-
-.sel {
-	background-color: #f0e8e8;
-	width: 350px;
-	padding: 10px 0px 10px 0;
-	font-size: 16px;
-	border-radius: 0;
-	border: none;
-	border-bottom: 1px solid rgba(0,0,0, 0.12);
-}
-
-.inp {
-    font-size:16px;
-    padding:10px 10px 10px 5px;
-    /*para que ocupe toda la linea: display:block;*/
-    width:300px;
-    border:none;
-    border-bottom:1px solid #757575;
-}
-
-/* Switch sobre checkbox */
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 54px;
-    height: 30px;
-}
-  
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-  
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-  
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 22px;
-    width: 22px;
-    left: 3px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-  
-input:checked + .slider {
-    background-color: #2196F3;
-}
-  
-input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-  
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-  
-.slider.round {
-    border-radius: 30px;
-}
-  
-.slider.round:before {
-    border-radius: 50%;
-}
-
 
 /* Responsive */
 

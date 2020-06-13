@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Banking Nacion</title>
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" type="text/css" href="./styles/forms.css">
     <script src="./index.js"></script>
 </head>
 <body>
@@ -156,47 +157,56 @@
     </nav>
     <article id="main-content">
         <h1>Configuración</h1>
-        <form action="home.html">
-            <fieldset>
+        <form class="form" action="home.html">
+            <fieldset class="fieldset-form">
                 <legend>General</legend>
-                <label for="size">Tamaño de letra:</label>
-                <select class="sel" name="size" id="size">
-                    <option value="small">Pequeña</option>
-                    <option value="medium">Mediana</option>
-                    <option value="large">Grande</option>
-                </select>
-                <br>
-                <label for="darkMode">Modo oscuro:</label>
-                <label class="switch">
-                    <input type="checkbox" name="darkMode" id="darkMode"/>
-                    <span class="slider round"></span>
-                </label>
+                <div class="label-and-other-form">
+                    <label class="label-form" for="size">Tamaño de letra:</label>
+                    <select class="sel" name="size" id="size">
+                        <option value="small">Pequeña</option>
+                        <option value="medium">Mediana</option>
+                        <option value="large">Grande</option>
+                    </select>
+                </div>
+                <div class="label-and-other-form">
+                    <label class="label-form" for="darkMode">Modo oscuro:</label>
+                    <label class="switch label-form">
+                        <input type="checkbox" name="darkMode" id="darkMode"/>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="fieldset-form">
                 <legend>Atajos de la página de inicio</legend>
-                <label for="shortcut2">Atajo 1:</label>
-                <select class="sel" name="shortcut2" id="shortcut2">
-                    <option value="fr1">Movimientos</option>
-                    <option value="fr2">Otra1</option>
-                    <option value="fr3">Otra2</option>
-                </select>
-                <br>
-                <label for="shortcut3">Atajo 2:</label>
-                <select class="sel" name="shortcut3" id="shortcut3">
-                    <option value="fr1">Transferencias Simple</option>
-                    <option value="fr2">Otra1</option>
-                    <option value="fr3">Otra2</option>
-                </select>
-                <br>
-                <label for="shortcut1">Atajo 3:</label>
-                <select class="sel" name="shortcut1" id="shortcut1">
-                    <option value="fr1">Pagar</option>
-                    <option value="fr2">Otra1</option>
-                    <option value="fr3">Otra2</option>
-                </select>
+                <div class="label-and-other-form">
+                    <label class="label-form" for="shortcut2">Atajo 1:</label>
+                    <select class="sel" name="shortcut2" id="shortcut2">
+                        <option value="fr1">Movimientos</option>
+                        <option value="fr2">Otra1</option>
+                        <option value="fr3">Otra2</option>
+                    </select>
+                </div>
+                <div class="label-and-other-form">
+                    <label class="label-form" for="shortcut3">Atajo 2:</label>
+                    <select class="sel" name="shortcut3" id="shortcut3">
+                        <option value="fr1">Transferencias Simple</option>
+                        <option value="fr2">Otra1</option>
+                        <option value="fr3">Otra2</option>
+                    </select>
+                </div>
+                <div class="label-and-other-form">
+                    <label class="label-form" for="shortcut1">Atajo 3:</label>
+                    <select class="sel" name="shortcut1" id="shortcut1">
+                        <option value="fr1">Pagar</option>
+                        <option value="fr2">Otra1</option>
+                        <option value="fr3">Otra2</option>
+                    </select>
+                </div>
             </fieldset>
-            <button class="btn cancel" type="button" onclick="location.href='home.html';" onkeypress="location.href='home.html';" role='button'>Cancelar</button>
-            <button class="btn">Aceptar</button>
+            <div class="container-buttons-form">
+                <button class="btn cancel" type="button" onclick="location.href='home.html';" onkeypress="location.href='home.html';" role='button'>Cancelar</button>
+                <button class="btn">Aceptar</button>
+            </div>
         </form>
     </article>
 </body>
