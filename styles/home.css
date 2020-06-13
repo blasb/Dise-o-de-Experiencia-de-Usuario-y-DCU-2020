@@ -1,13 +1,43 @@
 .arrow {
-    height: 24px;
-    width: 24px;
+    height: 32px;
+    width: 32px;
 }
 
 .cuenta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 2px;
     border-color: darkgrey;
     border-style: solid;
     border-radius: 10px;
     background-color: #FAFAFA;
     padding: 1%;
+    min-width: 600px;
+    margin: 15px 0px 15px 0px;
+}
+
+.cuenta:visited{
+    color: inherit;
+}
+
+.cuenta:hover{
+    color: #ffffff;
+    background-color: #263238;
+}
+
+.cuenta-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+
+}
+
+.cuenta-right{
+    display: flex;
+
+}
+
+.balance{
+    margin-right: 15px;
 }

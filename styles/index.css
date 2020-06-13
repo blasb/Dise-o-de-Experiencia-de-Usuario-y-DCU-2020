@@ -152,10 +152,6 @@ h1{
     cursor: pointer;
 }
 
-#button-search:focus{
-    outline: 2px solid var(--secondary-color-dark);
-}
-
 #mag-img{
     height: 20px;
     width: 20px;
