@@ -44,6 +44,10 @@ p{
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 * {
     font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
 }
@@ -130,6 +134,7 @@ h1{
     border-radius: 2px;
     border-width: 2px;
     border-style: solid;
+    border-color: var(--text-on-primary);
     background-color: var(--text-on-primary);
 }
 
